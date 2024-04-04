@@ -1,0 +1,61 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+#click_bg {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+#menu {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  background-color: #00bbff;
+}
+
+#show_progress {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  z-index: 1;
+}
+
+#progress {
+  height: 3%;
+  width: 100%;
+  position: fixed;
+}
+#bar {
+  background-color: #00bbff;
+  height: inherit;
+  width: 100%;
+  position: fixed;
+}
+
+#modal {
+  top: 40%;
+  height: 20%;
+  width: 70%;
+  position: fixed;
+  background-color: chocolate;
+}
+
+#close_btn {
+  position: absolute;
+  background-color: #ffffff;
+  height: 10%;
+  width: 2%;
+}
