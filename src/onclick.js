@@ -1,23 +1,17 @@
 var click_bg = document.getElementById("click_bg");
-var show_progress = document.getElementById("show_progress");
-var bar = document.getElementById("bar");
-bar.style.right = "100%";
+var show_money = document.getElementById("show_money");
+var money = 0;
+var efficiency = 100;
+var ef = document.getElementById("ef");
 
-var percentage = 0;
+show_money.innerText = `${money}원, 효율:${efficiency}%`;
 click_bg.addEventListener("click", function () {
-  if (bar.style.right.slice(0, -1) != 0) {
-    bar.style.right = `${bar.style.right.slice(0, -1) - 1}%`;
-  } else {
-    bar.style.right = "100%";
-  }
+  money = money + Math.floor((1 * efficiency) / 100);
+  console.log(money);
+  show_money.innerText = `${money}원, 효율:${efficiency}%`;
 });
 
-click_bg.addEventListener("click", function () {
-  if (percentage != 100) {
-    percentage++;
-    show_progress.innerText = percentage + "%";
-  } else {
-    percentage = 1;
-    show_progress.innerText = "1%";
-  }
+ef.addEventListener("click", function () {
+  efficiency = efficiency + 10;
+  show_money.innerText = `${money}원, 효율:${efficiency}%`;
 });
