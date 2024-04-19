@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./styles/main.css" rel="stylesheet" />
+    <link href="./styles/modal.css" rel="stylesheet" />
+    <script src="./src/onclick.js" type="module"></script>
+    <script src="./src/modal.js" type="module"></script>
   </head>
   <body>
     <div id="container">
-      <div id="show_money"></div>
-      <div id="click_bg"></div>
+      <div id="show_money">0원</div>
+      <div id="click_bg">
+        <div id="bg_container">
+          <img id="bg" />
+        </div>
+      </div>
       <div id="menu"></div>
       <btn id="ef">효율 올리기</btn>
     </div>
-    <script src="./src/onclick.js" type="module"></script>
+    <div id="modal">
+      <div id="modal_back">x</div>
+      <div id="modal_content">1</div>
+    </div>
+
     <script></script>
   </body>
 </html>
