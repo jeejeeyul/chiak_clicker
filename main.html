@@ -8,6 +8,7 @@
     <link href="./styles/modal.css" rel="stylesheet" />
     <script src="./src/onclick.js" type="module"></script>
     <script src="./src/modal.js" type="module"></script>
+    <script src="./src/menu_contents.js" type="module"></script>
   </head>
   <body>
     <div id="container">
@@ -17,14 +18,22 @@
           <img id="bg" />
         </div>
       </div>
-      <div id="menu"></div>
-      <btn id="ef">효율 올리기</btn>
+      <div id="menu">
+        <div id="menu_close">&#9660;</div>
+        <div id="menubar">
+          <div class="menu_contents" id="menu_0"><p>도감</p></div>
+          <div class="menu_contents" id="menu_1"><p>설정</p></div>
+          <div class="menu_contents" id="menu_2"><p>발주</p></div>
+          <div class="menu_contents" id="menu_3"><p>몰?루</p></div>
+          <div class="menu_contents" id="menu_4"><p>컨?텐?츠</p></div>
+      </div>
     </div>
+    <!-- <btn id="ef">효율 올리기</btn> -->
     <div id="modal">
       <div id="modal_back">x</div>
       <div id="modal_content">1</div>
     </div>
-
+    <div id="menu_open">&#9650;</div>
     <script></script>
   </body>
 </html>

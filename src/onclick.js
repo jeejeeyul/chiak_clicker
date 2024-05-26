@@ -6,12 +6,12 @@ var ef = document.getElementById("ef");
 
 show_money.innerText = `${money}원, 효율:${efficiency}%`;
 click_bg.addEventListener("click", function () {
-  money = money + Math.floor((1 * efficiency) / 100);
+  money = money + efficiency / 10;
   console.log(money);
   show_money.innerText = `${money}원, 효율:${efficiency}%`;
 });
 
-ef.addEventListener("click", function () {
+/*ef.addEventListener("click", function () {
   efficiency = efficiency + 10;
   show_money.innerText = `${money}원, 효율:${efficiency}%`;
-});
+}); */
