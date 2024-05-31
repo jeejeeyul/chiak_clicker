@@ -34,11 +34,15 @@ html {
   height: 5%;
   width: 100%;
   position: fixed;
+  z-index: 1000;
+  color: white;
 }
 
 #bg_container {
+  position: fixed;
   height: 100%;
   width: 100%;
+  z-index: -1000;
 }
 
 #bg {
