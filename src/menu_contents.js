@@ -1,14 +1,23 @@
-var menu_contents = document.querySelectorAll(".menu_contents");
-console.log(menu_contents);
-menu_contents.forEach((element) => {
+var menubar_contents = document.querySelectorAll(".menubar_contents");
+console.log(menubar_contents);
+menubar_contents.forEach((element) => {
   element.addEventListener("click", function () {
-    menu_contents.forEach((m) => {
+    menubar_contents.forEach((m) => {
       m.style.borderBottom = "1px solid black";
     });
     element.style.borderBottom = "none";
   });
 });
 
+var menu_contents = document.querySelectorAll(".contents");
+for (let i = 0; i < 5; i++) {
+  menubar_contents[i].addEventListener("click", function () {
+    menu_contents.forEach((element) => {
+      element.style.zIndex = "-1000";
+    });
+    menu_contents[i].style.zIndex = "10";
+  });
+}
 var menu_close = document.getElementById("menu_close");
 var menu_open = document.getElementById("menu_open");
 var menu = document.getElementById("menu");
