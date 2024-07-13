@@ -96,11 +96,13 @@ html {
 }
 
 #content0 {
-  background-color: red;
+  background-color: wheat;
+  font-size: xx-large;
 }
 
 #content1 {
   background-color: orange;
+  font-size: xx-large;
 }
 
 #content2 {
@@ -113,4 +115,20 @@ html {
 
 #content4 {
   background-color: blue;
+}
+
+#efficiencyup {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: gray;
+  text-align: center;
+}
+
+#buildingup {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: gray;
+  text-align: center;
 }

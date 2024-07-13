@@ -3,9 +3,9 @@ console.log(menubar_contents);
 menubar_contents.forEach((element) => {
   element.addEventListener("click", function () {
     menubar_contents.forEach((m) => {
-      m.style.borderBottom = "1px solid black";
+      m.style.border = "1px solid black";
     });
-    element.style.borderBottom = "none";
+    element.style.border = "none";
   });
 });
 
@@ -15,7 +15,7 @@ for (let i = 0; i < 5; i++) {
     menu_contents.forEach((element) => {
       element.style.zIndex = "-1000";
     });
-    menu_contents[i].style.zIndex = "10";
+    menu_contents[i].style.zIndex = "0";
   });
 }
 var menu_close = document.getElementById("menu_close");

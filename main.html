@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>chiak_clicker</title>
     <link href="./styles/main.css" rel="stylesheet" />
     <link href="./styles/modal.css" rel="stylesheet" />
     <script src="./src/onclick.js" type="module"></script>
-    <script src="./src/modal.js" type="module"></script>
+    <script src="./src/modal.ejs" type="module"></script>
     <script src="./src/menu_contents.js" type="module"></script>
     <script src="./src/change_bg.js" type="module"></script>
+    <script src='./src/upgrademoney.js' type="module" ></script>
+    <script src='./src/baseconfigure.js' type="module" ></script>
+    <script src='./src/upgradebuilding.js' type="module" ></script>
   </head>
   <body>
       <div id="bg_container">
@@ -22,21 +25,30 @@
       <div id="menu">
         <div id="menu_close">&#9660;</div>
         <div id="menubar">
-          <div class="menubar_contents" id="menu_0"><p>도감</p></div>
-          <div class="menubar_contents" id="menu_1"><p>설정</p></div>
-          <div class="menubar_contents" id="menu_2"><p>가챠!</p></div>
-          <div class="menubar_contents" id="menu_3"><p>몰?루</p></div>
-          <div class="menubar_contents" id="menu_4"><p>컨?텐?츠</p></div>
+          <div class="menubar_contents" id="menu_0"><p>업그레이드</p></div>
+          <div class="menubar_contents" id="menu_1"><p>건물</p></div>
+          <div class="menubar_contents" id="menu_2"><p>치악이#개발중#<br>조각상</p></div>
+          <div class="menubar_contents" id="menu_3"><p>#개발하는중#</p></div>
+          <div class="menubar_contents" id="menu_4"><p>업적#개발중#</p></div>
       </div>
       <div id="contents_container">
-        <div class="contents" id="content0"></div>
-        <div class="contents" id="content1"></div>
+        <div class="contents" id="content0">
+          <btn id="efficiencyup">클릭 당 돈 증가<br>(1원씩 늘어남)
+            <p id="show_pay"></p>
+          </btn>
+        </div>
+        <div class="contents" id="content1">
+          <btn id="buildingup">건물 레벨업
+            <p id="show_buildinglevel"></p>
+            <br>
+            <p id="show_buildingpay"></p>
+          </btn>
+        </div>
         <div class="contents" id="content2"></div>
         <div class="contents" id="content3"></div>
         <div class="contents" id="content4"></div>
       </div>
     </div>
-    <!-- <btn id="ef">효율 올리기</btn> -->
     <div id="modal">
       <div id="modal_back">x</div>
       <div id="modal_content">1</div>
