@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chiak_clicker</title>
+    <link href="./styles/main.css" rel="stylesheet" />
+    <link href="./styles/modal.css" rel="stylesheet" />
+    <script src="./src/onclick.js" type="module"></script>
+    <script src="./src/modal.ejs" type="module"></script>
+    <script src="./src/menu_contents.js" type="module"></script>
+    <script src="./src/change_bg.js" type="module"></script>
+    <script src='./src/upgrademoney.js' type="module" ></script>
+    <script src='./src/baseconfigure.js' type="module" ></script>
+    <script src='./src/upgradebuilding.js' type="module" ></script>
+    <script defer src="/__/firebase/10.12.3/firebase-app-compat.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/10.12.3/firebase-auth-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-database-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-firestore-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-functions-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-messaging-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-storage-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-analytics-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-remote-config-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-performance-compat.js"></script>
+<!-- 
+  initialize the SDK after all desired features are loaded, set useEmulator to false
+  to avoid connecting the SDK to running emulators.
+-->
+<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  </head>
+  <body>
+      <div id="bg_container">
+          <img id="bg"/>
+        </div>
+    <div id="container">
+      <div id="show_money">0원</div>
+      <div id="click_bg">
+      </div>
+      <div id="menu">
+        <div id="menu_close">&#9660;</div>
+        <div id="menubar">
+          <div class="menubar_contents" id="menu_0"><p>업그레이드</p></div>
+          <div class="menubar_contents" id="menu_1"><p>건물</p></div>
+          <div class="menubar_contents" id="menu_2"><p>치악이#개발중#<br>조각상</p></div>
+          <div class="menubar_contents" id="menu_3"><p>#개발하는중#</p></div>
+          <div class="menubar_contents" id="menu_4"><p>업적#개발중#</p></div>
+      </div>
+      <div id="contents_container">
+        <div class="contents" id="content0">
+          <btn id="efficiencyup">클릭 당 돈 증가<br>(1원씩 늘어남)
+            <p id="show_pay"></p>
+          </btn>
+        </div>
+        <div class="contents" id="content1">
+          <btn id="buildingup">건물 레벨업
+            <p id="show_buildinglevel"></p>
+            <br>
+            <p id="show_buildingpay"></p>
+          </btn>
+        </div>
+        <div class="contents" id="content2"></div>
+        <div class="contents" id="content3"></div>
+        <div class="contents" id="content4"></div>
+      </div>
+    </div>
+    <div id="modal">
+      <div id="modal_back">x</div>
+      <div id="modal_content">1</div>
+    </div>
+    <div id="menu_open">&#9650;</div>
+    <script></script>
+  </body>
+</html>
